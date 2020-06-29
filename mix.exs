@@ -12,8 +12,8 @@ defmodule Coherence.Mixfile do
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
       docs: [extras: ["README.md"], main: "Coherence"],
-      deps: deps,
-      package: package,
+      deps: deps(),
+      package: package(),
       name: "Coherence",
       description: """
       A full featured, configurable authentication and user management system for Phoenix.
